@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mon CV</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+            color: #ffffff;
+            animation: gradientShift 15s ease-in-out infinite alternate;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        h1, h2 {
+            margin-top: 0;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.03);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        a {
+            color: #00f5d4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mon CV</h1>
+        <section>
+            <h2>Informations personnelles</h2>
+            <p>Nom: Dupont<br>Prenom: Jean<br>Email: jean.dupont@example.com<br>Téléphone: +33 1 23 45 67 89</p>
+        </section>
+        <section>
+            <h2>Expériences professionnelles</h2>
+            <p><strong>Developpeur Web</strong> - Exemple Entreprise (2020 - Aujourd'hui)<br>- Développement d'applications web modernes<br>- Collaboration en équipe agile</p>
+        </section>
+        <section>
+            <h2>Compétences</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Git</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Liens</h2>
+            <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+        </section>
+    </div>
+</body>
+</html>
